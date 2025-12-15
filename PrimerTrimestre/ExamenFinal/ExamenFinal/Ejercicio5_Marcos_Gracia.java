@@ -1,6 +1,8 @@
-package Tema_3;
+package Examen_Package;
 import java.util.Scanner;
+
 public class Ejercicio5_AjedrezSimplificado {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Tablero actual:");
@@ -10,11 +12,13 @@ public class Ejercicio5_AjedrezSimplificado {
 				tablero[i][j] = '.';
 			}
 		}
+
 		int caballo_fila = 0, caballo_columna = 1;
 		int peon_fila = 6, peon_columna = 1;
 		tablero[caballo_fila][caballo_columna] = 'C';
 		tablero[peon_fila][peon_columna] = 'P';
 		boolean salir = false;
+		
 		while (!salir) {
 			System.out.println("    0 1 2 3 4 5 6 7");
 			System.out.println("-------------------");
